@@ -189,13 +189,18 @@ function numeroRandom(num) {
 }
 console.log (Math.random)
 function esPositivo(numero) {
+  if (numero < 0)
+  return "esPositivo";
+ else if (numero > 0)
+  return "esnegativo";
+  else false 
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   
-}
 
+}
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
