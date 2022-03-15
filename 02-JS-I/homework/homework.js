@@ -113,7 +113,7 @@ function obtenerResto(x, y) {
 }
 
 function esPar(num) {
-  if (num%=  0) {return true; 
+  if (num%=  0) {return true}; 
   return false; 
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
@@ -200,9 +200,10 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+
 }
 
-function combinarNombres(nombre, apellido) {
+function combinarNombres(nombre, apellido)  {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
@@ -293,4 +294,11 @@ module.exports = {
   areaDelTriangulo,
   deEuroAdolar,
   esVocal,
-};
+ cuadrado1,
+ redondearabajo,
+ redondear,
+ diferenciaalcubo,
+ diferenciaalcuadrad,
+ resto,
+ cubo1,
+ cuadrado1}
