@@ -25,13 +25,15 @@ const nuevoModulo = 21 % 5 === 1.05;
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
 
-function devolverString(str) {
+function devolverString(str) { console.log('str')
   // "Return" la string provista: str
   // Tu código:
   
-}
+} 
 
-function suma(x, y) {
+function suma(x, y) { 
+  var suma = x + y
+  return suma; 
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
@@ -39,24 +41,35 @@ function suma(x, y) {
 }
 
 function resta(x, y) {
+  var resta = x + y
+  return resta
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   
 }
 
 function multiplica(x, y) {
+  var multiplica = x * y
+  return multiplica
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
   
 }
 
 function divide(x, y) {
+  var divide = x / y
+return divide
+
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
   
 }
 
-function sonIguales(x, y) {
+function sonIguales(x, y) { 
+  if (x = y)
+  return true
+  return false
+   
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
