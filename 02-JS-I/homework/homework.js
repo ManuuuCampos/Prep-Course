@@ -202,20 +202,31 @@ function esPositivo(numero) {
 
 }
 function agregarSimboloExclamacion(str) {
+  console.log(str, '!');
+
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
 
 }
+var minombre = `${str}!`;
+agregarSimboloExclamacion(minombre)
 
 function combinarNombres(nombre, apellido)  {
+  var combinarnombree = nombre + apellido;
+  console.log(combinarnombree)
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
   
 }
 
+
 function obtenerSaludo(nombre) {
+ var hola = nombre
+ console.log("hola, " + hola)
+
+  obtenerSaludo(saludo)
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
@@ -223,6 +234,8 @@ function obtenerSaludo(nombre) {
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
+  triangulo  = (alto * ancho)/2
+  return triangulo
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
   
@@ -230,9 +243,12 @@ function obtenerAreaRectangulo(alto, ancho) {
 
 
 function retornarPerimetro(lado){
+
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+var perimetro1 = lado + 15 + 11 + 11
+return perimetro1
+
 }
 
 
@@ -240,14 +256,16 @@ function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
 
+var triangulo1 = base + altura + 15
+return triangulo1
 }
-
 
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+  var eurodolar = euro * 1.20
+  return eurodolar
 }
 
 
@@ -257,10 +275,11 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
-}
-
-
+if (letra = a, e, i, o, u)
+{return "Es vocal"}
+else if (letra = 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, '')
+{return "dato incorrecto" }
+return "dato incorrecto"}
 
 // No modificar nada debajo de esta línea
 // --------------------------------
@@ -306,4 +325,10 @@ module.exports = {
  diferenciaalcuadrad,
  resto,
  cubo1,
- cuadrado1}
+ cuadrado1,
+ triangulo,
+ perimetro1,
+ eurodolar,
+ triangulo1
+ }
+
