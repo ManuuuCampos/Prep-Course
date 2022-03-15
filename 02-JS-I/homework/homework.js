@@ -25,7 +25,9 @@ const nuevoModulo = 21 % 5 === 1.05;
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
 
-function devolverString(str) { console.log('str')
+function devolverString(str) {
+  console.log('') 
+
   // "Return" la string provista: str
   // Tu código:
   
@@ -66,9 +68,8 @@ return divide
 }
 
 function sonIguales(x, y) { 
-  if (x = y)
-  return true
-  return false
+  if (x = y) {return true}
+  return false;
    
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
@@ -76,7 +77,9 @@ function sonIguales(x, y) {
   
 }
 
-function tienenMismaLongitud(str1, str2) {
+function tienenMismaLongitud(str1, str2) { 
+  if ( str1 = str2 ) { return true;}
+  return false;
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -84,6 +87,8 @@ function tienenMismaLongitud(str1, str2) {
 }
 
 function menosQueNoventa(num) {
+  if (num< 90) {return true;}
+  return false;
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
