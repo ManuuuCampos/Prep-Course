@@ -5,6 +5,10 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
+  if (x > y){console.log(obtenerMayor)}
+  else if(x < y){console.log(obtenerMayor)}
+  else (true)
+   {console.log(obtenerMayor)}
 }
 
 function mayoriaDeEdad(edad) {
@@ -12,7 +16,10 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
 }
-  
+  if (edad => 18) {console.log(allowed)}
+  else (true) 
+console.log (not, allowed)
+
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
   //Cuando el estado es igual a 1, el usuario está "Online"
