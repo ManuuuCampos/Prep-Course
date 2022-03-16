@@ -15,10 +15,10 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-}
-  if (edad => 18) {console.log(allowed)}
+  if (edad => 18) {console.log('allowed')}
   else (true) 
-console.log (not, allowed)
+console.log ('not, allowed')
+}
 
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
@@ -26,6 +26,11 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+
+if (status = 1){console.log('Online')}
+else if (status = 2){console.log('Always')}
+else (true)
+console.log('Offline')
 }
 
 function saludo(idioma) {
@@ -35,6 +40,12 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+  var idioma = navigator.language 
+  if (idioma === 'en-EN'){console.log("hello!")}
+  else if (idioma === 'de-DE'){console.log("Guten Tag!")}
+  else if (idioma === 'zh (cmn-Hans-CN)'){console.log("Ni Hao!")}
+  else (true)
+  console.log("Hola!")
 }
 
 function colors(color) {
@@ -45,6 +56,7 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  
 }
 
 function esDiezOCinco(numero) {
