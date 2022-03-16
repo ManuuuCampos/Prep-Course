@@ -139,8 +139,6 @@ function elevarAlCuadrado(num) {
   // Tu código:
   
 }
-var diferenciaalcuadrado = cuadrado1
-console.log (diferenciaalcuadrado)
 
 function elevarAlCubo(num) {
     var cubo1 = num * num * num
@@ -168,7 +166,6 @@ return redondear;
   // Tu código:
   
 }
-console.log (redondear)
 
 function redondearHaciaArriba(num) {
   var redondearabajo = Math.floor()
@@ -177,7 +174,6 @@ function redondearHaciaArriba(num) {
   // Tu código:
   
 }
-console.log(redondearabajo)
 
 function numeroRandom(num) {
   if ( num <=  1)
@@ -187,7 +183,7 @@ function numeroRandom(num) {
   //Pista: investigá qué hace el método Math.random()
   
 }
-console.log (Math.random)
+
 function esPositivo(numero) {
   if (numero < 0)
   return "esPositivo";
@@ -226,7 +222,6 @@ function obtenerSaludo(nombre) {
  var hola = nombre
  console.log("hola, " + hola)
 
-  obtenerSaludo(saludo)
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
