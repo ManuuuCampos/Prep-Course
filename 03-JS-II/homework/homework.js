@@ -56,14 +56,28 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
-  
-}
+  var color;
+color = color ('Por favor introduce edad:');
+if (color =="") { alert ('color not found'); }
+        switch (colors1) {
+            case ("blue"): alert ("this is bluen"); break;
+            case ("red"): alert ("this is red"); break;
+            case ("green"): alert ("this is green"); break;
+            case ("orange"): alert ("this is orange"); break;
+            default: alert ("Color not found"); break; }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-}
+  var numero;
+  if (numero =="") { alert ('No has introducido edad'); }
+  numero = Number(numero);
+          switch (numero) {
+              case 4: alert (false); break;
+              case 10: alert (true); break;
+              default: alert (false); break;
+               }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
@@ -150,5 +164,4 @@ module.exports = {
   esVerdadero,
   tablaDelSeis,
   tieneTresDigitos,
-  doWhile
-};
+  doWhile}
