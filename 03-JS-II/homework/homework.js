@@ -65,6 +65,7 @@ if (color =="") { alert ('color not found'); }
             case ("green"): alert ("this is green"); break;
             case ("orange"): alert ("this is orange"); break;
             default: alert ("Color not found"); break; }
+           }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
@@ -77,7 +78,7 @@ function esDiezOCinco(numero) {
               case 4: alert (false); break;
               case 10: alert (true); break;
               default: alert (false); break;
-               }
+               } }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
@@ -91,15 +92,21 @@ function estaEnRango(numero) {
               case 50: alert (true); break;
               default: alert (false); break;
                }
+               }
 
 function esEntero(numero) {
-  // Devuelve "true" si "numero" es un entero (int/integer)
+  // Devuelve "true" si "numero" es un entero (irnt/intege)
   // Ejemplo: 0.8 -> false
   // Ejemplo: 1 -> true
   // Ejemplo: -10 -> true
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  var numero = Number.isInteger;
+if (numero = Math.floor) console.log(true);
+else (numero = Math.ceil) 
+false 
+
 }
 
 function fizzBuzz(numero) {
