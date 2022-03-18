@@ -71,7 +71,7 @@ function esDiezOCinco(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   var numero;
-  if (numero =="") { alert ('No has introducido edad'); }
+  if (numero =="") { alert ('No han introducido numero'); }
   numero = Number(numero);
           switch (numero) {
               case 4: alert (false); break;
@@ -83,7 +83,14 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-}
+  var numero;
+  if (numero =="") { alert ('No han introducido numero'); }
+  numero = Number(numero);
+          switch (numero) {
+              case 20: alert (false); break;
+              case 50: alert (true); break;
+              default: alert (false); break;
+               }
 
 function esEntero(numero) {
   // Devuelve "true" si "numero" es un entero (int/integer)
