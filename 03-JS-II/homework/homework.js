@@ -114,8 +114,13 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-}
-
+  var numero = Number
+  if ((numero /3) === 0) console.log("fizz")
+  else if((numero/3) === 0)console.log("buzz")
+  else if ((numero /3 && numero /5) === 0) console.log("fizzbuzz")
+  else console.log(numero)
+ }
+ 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
   //Si num1 es mayor a num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y positivo"
