@@ -161,25 +161,40 @@ function esVerdadero(valor){
   return('Soy verdadero');
 }
 
-function tablaDelSeis(){
+function tablaDelSeis(num){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
+  //Escribe tu código aquí  
+  var multiplicar = 6;
+  for (var i = 0; i < num.length; i++){
+     multiplicar = multiplicar * num[i];
+  }
+  return multiplicar;
+} 
   
-}
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  if (numero => 100 && numero <=1000) return ('true')
+  else return ('false')
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-}
+ var numero
+ let numero = '';
+let i = 0;
 
+do {
+  i = i + 5;
+  result = result + i;
+} while (i < 999999);
+ 
+console.log(result);
+}
 
 // No modificar nada debajo de esta línea
 // --------------------------------
