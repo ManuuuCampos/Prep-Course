@@ -5,18 +5,22 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x > y){console.log(obtenerMayor)}
-  else if(x < y){console.log(obtenerMayor)}
-  else (true)
-   {console.log(obtenerMayor)}
+  if (x > y)
+    console.log(obtenerMayor)
+  else if(x < y)
+  console.log(obtenerMayor)
+  else
+    console.log(obtenerMayor)
 }
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if (edad => 18) {console.log('allowed')}
-  else (true) 
+  
+  if ( edad >= 18)
+  console.log('allowed')
+  else 
 console.log ('not, allowed')
 }
 
@@ -27,9 +31,11 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
 
-if (status = 1){console.log('Online')}
-else if (status = 2){console.log('Always')}
-else (true)
+if (status = 1)
+console.log('Online')
+else if (status = 2)
+console.log('Always')
+else 
 console.log('Offline')
 }
 
@@ -41,10 +47,13 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   var idioma = navigator.language 
-  if (idioma === 'en-EN'){console.log("hello!")}
-  else if (idioma === 'de-DE'){console.log("Guten Tag!")}
-  else if (idioma === 'zh (cmn-Hans-CN)'){console.log("Ni Hao!")}
-  else (true)
+  if (idioma === 'en-EN')
+  console.log("hello!")
+  else if (idioma === 'de-DE')
+  console.log("Guten Tag!")
+  else if (idioma === 'zh (cmn-Hans-CN)')
+  console.log("Ni Hao!")
+  else 
   console.log("Hola!")
 }
 
@@ -84,7 +93,7 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  var numero;
+ 
   if (numero =="") { alert ('No han introducido numero'); }
   numero = Number(numero);
           switch (numero) {
@@ -103,9 +112,10 @@ function esEntero(numero) {
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
   var numero = Number.isInteger;
-if (numero = Math.floor) console.log(true);
+if (numero = Math.floor)
+ console.log(true);
 else (numero = Math.ceil) 
-false 
+console.log (false) 
 
 }
 
@@ -134,7 +144,8 @@ function operadoresLogicos(num1, num2, num3) {
   if (num1>num2 && num1>num3) console.log("Numero 1 es mayor y positivo")
  else if (num1 === 0, num2 === 0 ,num3 === 0) console.log ("Error")
  else if ((num3>num1 && num3>num2)+1) console.log(num3)
- else false
+ else 
+ console.log(false)
   }
   
 function esPrimo(numero) {
@@ -148,8 +159,8 @@ function esPrimo(numero) {
       console.log('True');
     }else {
       console.log('falso');
-    }  
-  }
+}
+ }
 }
 
 function esVerdadero(valor){
@@ -158,7 +169,7 @@ function esVerdadero(valor){
   //Escribe tu código aquí
   var valor =Boolean
   if (valor > 50) {return('Soy Falso');}
-  return('Soy verdadero');
+ else return('Soy verdadero');
 }
 
 function tablaDelSeis(num){
@@ -166,16 +177,17 @@ function tablaDelSeis(num){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí  
   var multiplicar = 6;
-  for (var i = 0; i < num.length; i++){
+  for (var i = 1; i <= num.length; i++){
      multiplicar = multiplicar * num[i];
   }
-  return multiplicar;
+  console.log(multiplicar);
 } 
   
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+  var numero =Number
   if (numero => 100 && numero <=1000) return ('true')
   else return ('false')
 }
