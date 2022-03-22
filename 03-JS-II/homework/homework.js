@@ -65,15 +65,14 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
-  var color;
-color = color ('Por favor introduce edad:');
-if (color =="") { alert ('color not found'); }
-        switch (colors1) {
-            case ("blue"): alert ("this is bluen"); break;
-            case ("red"): alert ("this is red"); break;
-            case ("green"): alert ("this is green"); break;
-            case ("orange"): alert ("this is orange"); break;
-            default: alert ("Color not found"); break; }
+  var color = color ('Por favor introduce un color:');
+if (color =="") { console.log ('color not found'); }
+        switch (color) {
+            case ("blue"): console.log("this is bluen"); break;
+            case ("red"): console.log ("this is red"); break;
+            case ("green"): console.log("this is green"); break;
+            case ("orange"): console.log ("this is orange"); break;
+            default: console.log ("Color not found"); break; }
            }
 
 function esDiezOCinco(numero) {
@@ -81,12 +80,12 @@ function esDiezOCinco(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   var numero;
-  if (numero =="") { alert ('No han introducido numero'); }
+  if (numero =="") { console.log('No han introducido numero'); }
   numero = Number(numero);
           switch (numero) {
-              case 4: alert (false); break;
-              case 10: alert (true); break;
-              default: alert (false); break;
+              case 4: console.log(false); break;
+              case 10: console.log (true); break;
+              default: console.log(false); break;
                } }
 
 function estaEnRango(numero) {
@@ -168,8 +167,9 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
   var valor =Boolean
-  if (valor > 50) {return('Soy Falso');}
- else return('Soy verdadero');
+  if (valor > 50) console.log('Soy Falso');
+ else 
+ console.log('Soy verdadero');
 }
 
 function tablaDelSeis(num){
@@ -188,8 +188,8 @@ function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
   var numero =Number
-  if (numero => 100 && numero <=1000) return ('true')
-  else return ('false')
+  if (numero => 100 && numero <=1000) console.log('true')
+  else console.log('false')
 }
 
 function doWhile(numero) {
