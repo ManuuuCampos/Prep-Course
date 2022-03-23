@@ -3,8 +3,10 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  
+  var ilista = ["Que Onda",2,3,4,5,6,7]
+ console.log[1]
 }
-
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
