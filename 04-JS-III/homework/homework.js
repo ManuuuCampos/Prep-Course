@@ -1,22 +1,28 @@
 // No cambies los nombres de las funciones.
 
+const { suma } = require("../../02-JS-I/homework/homework")
+
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
   
   var ilista = ["Que Onda",2,3,4,5,6,7]
- console.log[1]
+ console.log[0]
 }
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  var ilista = ["Que Onda",2,3,4,5,6,7]
+  console.log([8])
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  var ilista = ["Que Onda",2,3,4,5,6,7]
+  console.log(ilista.length)
 }
 
 
@@ -25,6 +31,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var array = [1,2,3,4,5,6,7,8]
+for (var i = 0; index < array.length; i++) {
+  sumar = 1 + i
+  console.log(array[1])
+}
 }
 
 
@@ -32,6 +43,9 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  lista[1,3,4,5,6,7,8]
+  lista[1] = "Agregandoarray"
+  console.log(lista) 
 }
 
 
@@ -40,6 +54,9 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+const lista = [1,2,3,4,5,6,7,8,9,0]
+lista.unshift('nico')
+console.log (lista)
 }
 
 
@@ -49,6 +66,9 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  var str=['', '']
+  console.log(str)
+
 }
 
 
@@ -56,6 +76,11 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  var elementos = [1,2,3,5,6,7,8,'']
+if (elementos = [8])
+console.log (true)
+else
+console.log (false)
 }
 
 
@@ -63,7 +88,11 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-}
+  var numeros =[1,2,3,4]
+  suma = numeros[0] + numeros[1] + numeros[2] + numero[3] 
+    console.log(suma)
+  }
+  
 
 
 function promedioResultadosTest(resultadosTest) {
@@ -77,6 +106,13 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  var numeros = [1,2,3]
+  if (numeros[0]>numeros[1] && numeros[0]>numeros[2])
+  console.log(numeros[0])
+  else if (numeros[1]>numeros[0] && numeros[1]>numeros[2])
+  console.log[numeros[1]]
+   else
+   console.log(numeros[2])
 }
 
 
@@ -84,6 +120,14 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+  var multiplicar
+  for (let I = 0; I < arguments.length; I++) {
+    multiplicar = arguments * arguments
+    if (arguments = '')
+    console.log('0')
+    else
+    console.log(multiplicar)
+  }
 }
 
 
