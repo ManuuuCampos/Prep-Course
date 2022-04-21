@@ -148,7 +148,7 @@ function elevarAlCubo(num) {
   
 }
 var diferenciaalcubo = cuadrado1
-console.log (diferenciaalcubo)
+console.log (cuadrado1)
 
 function elevar(num, exponent) {
   var elevar = Math.pow (num, exponent); 
