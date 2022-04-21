@@ -123,7 +123,7 @@ function esPar(num) {
 
 function esImpar(num) {
   if (num%=0) {return false;
-    return true;
+    return true; }
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -133,7 +133,6 @@ function esImpar(num) {
 function elevarAlCuadrado(num) {
   var cuadrado1 = num * num
   return cuadrado1
-  }
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
@@ -145,10 +144,8 @@ function elevarAlCubo(num) {
   return cubo1
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  
 }
-var diferenciaalcubo = cuadrado1
-console.log (cuadrado1)
+
 
 function elevar(num, exponent) {
   var elevar = Math.pow (num, exponent); 
@@ -203,10 +200,11 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  var minombre = `${str}!`;
+console.log(minombre)
 
 }
-var minombre = `${str}!`;
-agregarSimboloExclamacion(minombre)
+
 
 function combinarNombres(nombre, apellido)  {
   var combinarnombree = nombre + apellido;
@@ -270,11 +268,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-if (letra = a, e, i, o, u)
-{return "Es vocal"}
+if (letra = 'a', 'e', 'i', 'o', 'u')
+console.log("Es vocal")
 else if (letra = 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, '')
-{return "dato incorrecto" }
-return "dato incorrecto"}
+console.log( "dato incorrecto") 
+else
+console.log("dato incorrecto")
+}
 
 // No modificar nada debajo de esta línea
 // --------------------------------
@@ -312,18 +312,4 @@ module.exports = {
   retornarPerimetro,
   areaDelTriangulo,
   deEuroAdolar,
-  esVocal,
- cuadrado1,
- redondearabajo,
- redondear,
- diferenciaalcubo,
- diferenciaalcuadrad,
- resto,
- cubo1,
- cuadrado1,
- triangulo,
- perimetro1,
- eurodolar,
- triangulo1
- }
-
+  esVocal}
