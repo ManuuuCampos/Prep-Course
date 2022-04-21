@@ -178,7 +178,7 @@ function tablaDelSeis(num){
   //Escribe tu código aquí  
   var multiplicar = 6;
   for (var i = 1; i <= num.length; i++){
-     multiplicar = multiplicar * num[i];
+     multiplicar = multiplicar * num;
   }
   console.log(multiplicar);
 } 
