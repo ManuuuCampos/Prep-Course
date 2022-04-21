@@ -229,7 +229,7 @@ function obtenerSaludo(nombre) {
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
-  triangulo  = (alto * ancho)/2
+  var triangulo  = (alto * ancho)/2
   return triangulo
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
