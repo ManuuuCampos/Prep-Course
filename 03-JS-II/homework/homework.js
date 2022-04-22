@@ -5,12 +5,10 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x > y)
-    console.log(obtenerMayor)
-  else if(x < y)
-  console.log(obtenerMayor)
-  else
-    console.log(obtenerMayor)
+  if (x > y){ 
+    return x;}
+  else { 
+    return y }
 }
 
 function mayoriaDeEdad(edad) {
@@ -18,10 +16,10 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   
-  if ( edad >= 18)
-  console.log('allowed')
-  else 
-console.log ('not, allowed')
+  if ( edad >= 18){ 
+  return 'Allowed'; }
+  else ;
+{return 'Not allowed';}
 }
 
 function conection(status) {
@@ -31,12 +29,12 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
 
-if (status = 1)
-console.log('Online')
-else if (status = 2)
-console.log('Always')
-else 
-console.log('Offline')
+if (status === 1){ 
+return 'Online'; }
+else if (status === 2)
+{ return 'Away'; }
+else;
+{return 'Offline';}
 }
 
 function saludo(idioma) {
@@ -46,15 +44,14 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  var idioma = navigator.language 
-  if (idioma === 'en-EN')
-  console.log("hello!")
-  else if (idioma === 'de-DE')
-  console.log("Guten Tag!")
-  else if (idioma === 'zh (cmn-Hans-CN)')
-  console.log("Ni Hao!")
-  else 
-  console.log("Hola!")
+  if (idioma === 'ingles'){ 
+  return 'Hello!'; }
+  else if (idioma === 'aleman'){ 
+  return 'Guten Tag!'; }
+  else if (idioma === 'mandarin'){ 
+  return 'Ni Hao!'; }
+  else { 
+    return 'Hola!'; }
 }
 
 function colors(color) {
@@ -65,43 +62,31 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
-  var color = color ('Por favor introduce un color:');
-if (color =="") { console.log ('color not found'); }
         switch (color) {
-            case ("blue"): console.log("this is bluen"); break;
-            case ("red"): console.log ("this is red"); break;
-            case ("green"): console.log("this is green"); break;
-            case ("orange"): console.log ("this is orange"); break;
-            default: console.log ("Color not found"); break; }
+            case "blue": 
+            return "This is blue"; break;
+            case "red":
+               return "This is red"; break;
+            case "green": 
+            return "This is green"; break;
+            case "orange":
+               return "This is orange"; break;
+            default: 
+            return "Color not found"; break; }
            }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  var numero;
-  if (numero =="") { console.log('No han introducido numero'); }
-  numero = Number(numero);
-          switch (numero) {
-              case 4: console.log(false); break;
-              case 10: console.log (true); break;
-              default: console.log(false); break;
-               } }
-
+  return numero === 10 || numero === 5;
+   }
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
- 
-  if (numero =="") { alert ('No han introducido numero'); }
-  numero = Number(numero);
-          switch (numero) {
-              case 20: alert (false); break;
-              case 50: alert (true); break;
-              default: alert (false); break;
-               }
-               }
-
+  return numero < 50 && numero > 20;
+   }
 function esEntero(numero) {
   // Devuelve "true" si "numero" es un entero (irnt/intege)
   // Ejemplo: 0.8 -> false
@@ -110,12 +95,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  var numero = Number.isInteger;
-if (numero = Math.floor)
- console.log(true);
-else (numero = Math.ceil) 
-console.log (false) 
-
+  return numero % 1 === 0;
 }
 
 function fizzBuzz(numero) {
@@ -123,12 +103,11 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  var numero = Number
-  if ((numero /3) === 0) console.log("fizz")
-  else if((numero/3) === 0)console.log("buzz")
-  else if ((numero /3 && numero /5) === 0) console.log("fizzbuzz")
-  else console.log(numero)
- }
+  if(numero % 15 === 0) return 'fizzbuzz';
+  if(numero % 3 === 0) return 'fizz';
+  if(numero % 5 === 0) return 'buzz';
+  return numero;
+   }
 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
@@ -137,15 +116,23 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  var num1= Number
-  var num2= Number
-  var num3= Number
-  if (num1>num2 && num1>num3) console.log("Numero 1 es mayor y positivo")
- else if (num1 === 0, num2 === 0 ,num3 === 0) console.log ("Error")
- else if ((num3>num1 && num3>num2)+1) console.log(num3)
- else 
- console.log(false)
+ 
+  if(num1 < 0 || num2 < 0 || num3 < 0) {
+    return "Hay negativos";
   }
+  else if(num1 === 0 || num2 === 0 || num3 === 0) {
+    return "Error";
+  }
+  else if(num1 > 0 && num1 > num2 && num1 > num3) {
+    return "Número 1 es mayor y positivo";
+  }
+  else if(num3 > num1 && num3 > num2) {
+    return num3 + 1;
+  }
+  else {
+    return false;
+  }
+}
   
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
@@ -153,54 +140,60 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  for (var primos = 1; primos <= 100; primos++) {
-    if (primos % 2 == 0) {
-      console.log('True');
-    }else {
-      console.log('falso');
-}
- }
+  if( numero < 2) return false;
+  if(numero === 2) return true;
+  for(var i = 2; i < numero; i++) {
+    if(numero % i === 0) {
+      return false;
+    }
+  }
+  return true;
 }
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-  var valor =Boolean
-  if (valor > 50) console.log('Soy Falso');
- else 
- console.log('Soy verdadero');
+  if(valor === true){
+    return "Soy verdadero"
+  }
+  return "Soy falso"
 }
 
 function tablaDelSeis(num){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí  
-  var multiplicar = 6;
-  for (var i = 1; i <= num.length; i++){
-     multiplicar = multiplicar * num;
+  let arraytabladelseis = []
+  for (let i = 0; i <= 10; i++){
+    arraytabladelseis.push(6 * i)
   }
-  console.log(multiplicar);
-} 
+  return arraytabladelseis
+ }
   
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  var numero =Number
-  if (numero => 100 && numero <=1000) console.log('true')
-  else console.log('false')
+  if (numero >= 100 && numero < 1000)
+   {return true; }
+  else
+   {return false }
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-var i = numero * 5
-while (i * 8);
-console.log(i);
+var a = numero;
+var i = 0;
+do {
+  i = i + 1;
+  a = a + 5;
 }
-
+while(i < 8);
+return a;
+ }
 // No modificar nada debajo de esta línea
 // --------------------------------
 
